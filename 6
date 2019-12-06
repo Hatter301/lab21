@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    int i,l,f=0;
+   string s;
+   getline(cin,s);
+   l=s.size();
+   i=l-1;
+   while(s[i]!=(char)92) 
+   i--;
+   i--;
+   while(s[i]!=(char)92) 
+   i--;
+   i++;
+   for(i;s[i]!=(char)92;i++)
+   cout<<s[i];
+    return 0;
+}
