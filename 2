@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    int i,l,f=0,j,min;
+   string s;
+   min=100;
+   getline(cin,s);
+   l=s.size();
+   i=0;
+   for(i;i<l;i++)
+  if (s[i]!=' ') {
+      for(j=i;(s[j]!=' ')&&(j!=l);j++)
+      f++;
+      if (f<min)
+      min=f;
+      f=0;
+      i=j;
+  }
+cout<<min;
+    return 0;
+}
