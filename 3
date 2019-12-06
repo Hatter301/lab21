@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    int i,l,j,f;
+   string s;
+   getline(cin,s);
+   l=s.size();
+   i=0;
+   for(i;i<l;i++)
+  if (s[i]!=' ') {
+      f=s[i];
+      for(j=i+1;(s[j]!=' ')&&(j!=l);j++)
+      if (s[j]==f)
+      s[j]='.';
+      i=j;
+  }
+cout<<endl<<s;
+    return 0;
+}
