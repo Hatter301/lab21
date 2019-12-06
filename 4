@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    int i,l,f=0;
+   string s;
+   getline(cin,s);
+   l=s.size();
+   for(i=0;i<l;i++)
+   if((s[i]=='А')||(s[i]=='Е')||(s[i]=='И')||(s[i]=='О')||(s[i]=='У')||(s[i]=='Ы')||(s[i]=='Э')||(s[i]=='Ю')||(s[i]=='Я')||(s[i]=='а')||(s[i]=='е')||(s[i]=='и')||(s[i]=='о')||(s[i]=='у')||(s[i]=='ы')||(s[i]=='э')||(s[i]=='ю')||(s[i]=='я'))
+   f++;
+cout<<f;
+    return 0;
+}
