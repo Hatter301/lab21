@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    int i,l,f=1;
+   string s;
+   getline(cin,s);
+   if(s[0]==' ')
+   f=0;
+   l=s.size();
+   for(i=1;i<l;i++)
+   if((s[i]!=' ')&&(s[i-1]==' '))
+   f++;
+cout<<f;
+    return 0;
+}
